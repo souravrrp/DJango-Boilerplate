@@ -9,13 +9,12 @@ DJango Boilerplate
 * Developer Department
 
 ## Version No
-v1.02
+v1.00
 
 ## System Requirements
-* Apache 2.4 with mod_wsgi
-* Python 3.7
-* Django 3.0.3
-* MariaDB 10.6
+* Python 3.8
+* Django 3.2
+* Sqlite
 
 ## Installation
 Create directory: `mkdir <dirname>`
@@ -24,7 +23,7 @@ Go to the directory: `cd <dirname>`
 
 Open/Run Command prompt or type addresbar `cmd` and type `code .`
 
-Create virtual environment first and active: `python -m venv venv`
+Create virtual environment first and active: `py -3 -m venv .venv`
 
 Start virtual environment: `.venv\scripts\activate`
 

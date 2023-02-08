@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <!-- Head tag -->
+    {% include "base/head.html" %}
+</head>
+
+<body>
+
+    <!-- Header -->
+    {% include 'base/header.html' %}
+
+    <!-- Navbar -->
+    {% include 'base/navbar.html' %}
+
+    {% comment %} message tag {% endcomment %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Main content -->
+    {% block content %}
+    {% endblock content %}
+
+    <!-- Footer -->
+    {% include 'base/footer.html' %}
+
+    <!-- Javascript tag -->
+    {% include 'base/scripts.html' %}
+
+</body>
+
+</html>
