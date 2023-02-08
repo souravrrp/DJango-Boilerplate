@@ -1,0 +1,11 @@
+#Database Details
+DB_USER=abcd
+DB_PASSWORD=password
+DB_DSN=192.168../db_name
+DB_LIB_DIR=D:\Installed_Software\instantclient_11_2
+DB_PORT=1521
+DB_NAME=db_name
+DB_HOST=192.168..
+
+PDF_LOCATION=pdf_files_location_full_path_no_ending_slash
+key='newvalue'
